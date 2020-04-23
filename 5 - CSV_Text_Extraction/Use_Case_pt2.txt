@@ -1,0 +1,11 @@
+Use Case Name: Get list of keywords from a .csv list of articles. Pt II
+
+Scenario: Local newspaper wants to automate extracting a list of keywords from a collection of articles in a .csv file.
+
+Context: In an effort to increase enhance their own Search Engine Optimization a local they would like to extract identified keywords along with the article headline from a file for later analysis to measure against their own efforts.
+
+Scope: Given a list of article information from the NYTimes an extract the keywords and the article Headline they are assigned to.
+
+Success Condition:
+
+Develop an automated means to extract keywords and the headlines they are assigned to from a .csv file, then generate a report containing the findings.
