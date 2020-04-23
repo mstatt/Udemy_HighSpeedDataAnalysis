@@ -1,0 +1,11 @@
+Use Case Name: Analyzing Review Data for Target words and Phrases
+
+Scenario: A publishing company realized the impact that reviews have on book sales. Locating review data and prepping it for analysis is their initial task.
+The follow-on task is for analysis of the review data for isolation of repetitive words and phrases.
+
+Context: Isolate the most used words and sentences customers use in 5 star ratings of books.
+
+Scope: Given the preprocessed 5 star review data analyze and isolate the most used words and phrases.
+
+Success Condition:
+Generate reports based on the most used words and phrases in the Amazon book review data.

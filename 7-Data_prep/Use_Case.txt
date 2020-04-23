@@ -1,0 +1,10 @@
+Use Case Name: Preparing Review data for analysis
+
+Scenario: A publishing company realized the impact that reviews have on book sales. Locating review data and prepping it for analysis is their initial task for getting better sales from reviews of their own published products.
+
+Context: Isolating the necessary fields in a large volume of review data and extracting only those fields for later analysis.
+
+Scope: Given a large volume of Amazon book reviews, segment them based on star rating and review text.
+
+Success Condition:
+Develop a means for automated segmentation and review extraction of Amazon review data.

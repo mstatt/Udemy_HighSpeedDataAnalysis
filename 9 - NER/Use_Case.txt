@@ -1,0 +1,15 @@
+Use Case Name: Political Campaign wants to analyze opponent speeches
+
+Scenario: A political campaign wanted to analyze the speeches of an opponent to isolate locations, organizations or individuals the candidate has sopken about.
+
+Context: By isolating entities in any given collection of speeches it provides one with a wider picture of allies or opponents for consideration in future debates or advertising.
+
+Scope: Given a collection of speeches isolate entities that the politician has mentioned at least once.
+
+
+************IMPORTANT*********
+This is an example case, For extreme clarity I would like to restate THIS IS AN EXAMPLE CASE using test speeches from President Obama.
+The collection of speeches used in this exercise were gathered from (https://www.americanrhetoric.com/)
+
+Success Condition:
+Generate reports based on the entities extracted from candidate speeches.

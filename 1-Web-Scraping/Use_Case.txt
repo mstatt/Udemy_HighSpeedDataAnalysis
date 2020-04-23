@@ -1,0 +1,10 @@
+Use Case Name: Web Data Acquisition
+
+Scenario: News Organization wanted to gather text data from publicly available web site pages for analysis.
+
+Context: Provided specific URL's, gather article data for text analysis in an effort to gain insight into writing styles, messaging and narrative assessment.
+
+Scope: Limited to a specified number of pages, from a specific site based on various page structure constraints.
+
+Success Condition:
+Automated acquisition of text data from the specified URL's in an expedited manner.

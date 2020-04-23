@@ -1,0 +1,15 @@
+Use Case Name: Analyze the weight and relevance of terms across a number of files
+
+Scenario: A political campaign wanted to analyze the speeches of an opponent to isolate keywords based on frequency and weight across multiple files.
+
+Context: By isolating keywords for frequency and weight in any given collection of speeches it provides one with a wider picture of allies or opponents for consideration in future debates or advertising.
+
+Scope: Given a collection of speeches isolate keywords that the politician uses most and by weight.
+
+
+************IMPORTANT*********
+This is an example case, For extreme clarity I would like to restate THIS IS AN EXAMPLE CASE using test speeches from President Obama.
+The collection of speeches used in this exercise were gathered from (https://www.americanrhetoric.com/)
+
+Success Condition:
+Generate reports based on the term frequency across multiple documents.

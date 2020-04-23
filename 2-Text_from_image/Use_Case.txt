@@ -1,0 +1,12 @@
+Use Case Name: Extract Text from Images
+
+Scenario: Social Media analyst wants to be able to extract as much text as possible from images appearing in their posts and feed.
+
+Context: In an increased effort to protect the brand, they would like to be more diligent in the reporting and removal of any offensive memes or images.
+
+Scope: Given a variety of image types, text needs to be extracted for further analysis.
+
+Success Condition:
+Create files with the text extracted for images provided for later analysis.
+
+Extra: Generate a report containing image name and extracted text to share with team members.

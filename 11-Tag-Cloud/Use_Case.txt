@@ -1,0 +1,12 @@
+Use Case Name: Generate a word cloud from book reviews
+
+Scenario: A publishing company realized the impact that reviews have on book sales. Locating review data and prepping it for analysis is their initial task.
+The follow-on task is for analysis of the review data for isolation of repetitive words and phrases. The publisher wanted a visual quick ref of prominent words from the 5 star review text.
+
+Context: Isolate the most used words and sentences customers use in 5 star ratings of books. Display them prominently where size is determined by frequency of occurrence.
+
+Scope: Given the preprocessed 5 star review data analyze and isolate the most used words and phrases.
+
+
+Success Condition:
+Generate a .pdf with a word cloud based on the most used words and phrases in the Amazon book review data.

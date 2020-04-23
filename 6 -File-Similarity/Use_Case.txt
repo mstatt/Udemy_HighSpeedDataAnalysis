@@ -1,0 +1,10 @@
+Use Case Name: File Similarity Comparison
+
+Scenario: Legal team has been provided a large cache of documents and would like to remove all duplicates in an effort to reduce workload.
+
+Context: The redundancy of duplicate files meant to intentionally waste time and effort becomes increasingly costly.
+
+Scope: Given a directory of files develop an automated means to sort and report the level of similarity across every file.
+
+Success Condition:
+Generate a report that contains the similarity score of all files in a specified directory.
