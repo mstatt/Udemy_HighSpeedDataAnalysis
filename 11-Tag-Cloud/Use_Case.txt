@@ -9,4 +9,4 @@ Scope: Given the preprocessed 5 star review data analyze and isolate the most us
 
 
 Success Condition:
-Generate a .pdf with a word cloud based on the most used words and phrases in the Amazon book review data.
+Generate a image file with a word cloud based on the most used words in the Amazon book review data.

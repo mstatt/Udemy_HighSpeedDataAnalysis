@@ -9,13 +9,13 @@ def tfidf_calc(x):
     #nltk.download('stopwords')
     from textblob import TextBlob as tb
     from nltk.corpus import stopwords
-    #Imported Modules
+
 
     cachedStopWords = stopwords.words("english")
 
     compdir =  x + '/'
     numofwords = 20
-
+    #To calculate process completion %
     def getpercent(num,num2):
         return (num/num2)*100
 
@@ -33,14 +33,21 @@ def tfidf_calc(x):
 
     number_of_files = str(len([item for item in os.listdir(compdir) if os.path.isfile(os.path.join(compdir, item))]))
     print("Processing ("+ number_of_files + ") files for TFIDF.....")
+    #Create a blob list for the words
     bloblist = []
+    #List of files
     filename_listtf = []
     print("Building list and stream for TFIDF calculation......")
+    #Run through the directory and process each text file in the directory
     for filename2tf in sorted(glob.glob(compdir+"*.txt")):
         with open(filename2tf, 'r') as myfile2tf:
+        	#Joining the lines of the file, stripping trailing whitespace and making them uppercase
             initstream = "".join(line.rstrip() for line in myfile2tf).upper()
+            #loading the words from the text blob object that are not stop words
             txtstreamtf =tb(" ".join([word for word in initstream.split() if word not in cachedStopWords]))
+            #Adding the basename without the directory path to the file list
             filename_listtf.append(os.path.basename(filename2tf))
+            #Adding the text stream to the blob list
             bloblist.append(txtstreamtf)
             myfile2tf.close()
 
@@ -63,6 +70,7 @@ def tfidf_calc(x):
             sorted_words = sorted(scores.items(), key=lambda x: x[1], reverse=True)
             #write the output to html page
             for word, score in sorted_words[:numofwords]:
+            	#Loop through the list of words, writing them out to the html table
                 fp1tfidf.write("<tr><td>")
                 fp1tfidf.write("\tWord: {}</td><td> TF-IDF: {} </td></tr>".format(word, round(score, 5)))
             fp1tfidf.write("</tr>")

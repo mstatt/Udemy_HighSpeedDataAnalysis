@@ -48,7 +48,7 @@ txt_files = list(filter(lambda x: x.endswith('.txt'), os.listdir('to_process/'))
 txt_files.sort()
 total_txt_cnt = len(txt_files)
 names_entities = {}
-ne_cnt =1
+
 
 
 #Grab all files in the directory.
@@ -59,7 +59,7 @@ for file in txt_files:
         print('Name Entity extraction processing '+str(file))
     # Pass each file to the Getnames function to extract the entities
         names_entities[str(file)] = getnames('to_process/'+ file)
-        ne_cnt = ne_cnt +1
+
 
 #Build the ordered dictionary
 odnames = collections.OrderedDict(names_entities.items())

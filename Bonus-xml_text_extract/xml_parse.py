@@ -16,10 +16,10 @@ def xml_text(filename):
 	    soup = BeautifulSoup(fp, 'xml')
 
 	#Grab the specific tag we need for text extraction
-	article_news = soup.find_all('sentence')
+	legal_text = soup.find_all('sentence')
 
 	#Combine all of the sentence tags text into a single var with a newline seperator.
-	for s in article_news:
+	for s in legal_text:
 		articletext = articletext + s.get_text() + '\n'
 
 	#Output the text to a file in the same folder.

@@ -2,10 +2,9 @@ Use Case Name: Get list of keywords from a .csv list of articles.
 
 Scenario: Local newspaper wants to automate extracting a list of keywords from a collection of articles in a .csv file.
 
-Context: In an effort to increase enhance their own Search Engine Optimization a local they would like to extract identified keywords from a file for later analysis against their own efforts.
+Context: In an effort to increase enhance their own Search Engine Optimization a local newpaper would like to extract identified keywords from a file for later analysis against their own efforts.
 
-Scope: Given a list of article information from the NYTimes an extract the keywords.
+Scope: Given a list of article information from the NYTimes and extract the keywords.
 
 Success Condition:
-
 Develop an automated means to extract keywords from a .csv file

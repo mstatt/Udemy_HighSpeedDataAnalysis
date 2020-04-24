@@ -27,7 +27,7 @@ for filename in glob.glob(proc_dir+"*.csv"):
 			#This is not the most dynamic way of accomplishing this, but it works
 			start = line.find("[")
 			end = line.find("]")
-			line2 = line[start:end]
+			line2 = line[start:end+1]
 			#and remove non-Ascii chars
 			content2 = re.sub(r'[^\x00-\x7f]',r'', line2)
 			#Write output to file
